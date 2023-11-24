@@ -1,0 +1,39 @@
+<!-- Programmer: Alimurung, AM 
+Date: 22 Nov 2023, 09:23 am [start]
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="prefi_styles.css">
+        <script src="prefi_1.js"></script>
+    </head>
+    <body>
+        <div class="input-num">
+            <form>
+                <label for="first-num">1st Number:</label>
+                <input 
+                    id="first-num" 
+                    type="text"
+                    placeholder="Enter first number"/>
+                <br/>
+                <label for="second-num">2nd Number</label>
+                <input 
+                    id="second-num" 
+                    type="text"
+                    placeholder="Enter second number"/>
+            </form>
+        </div>
+        <div class="opt_buttons">
+            <table>
+                <tr>
+                    <td><button onclick="times()">&nbsp; Multiply &nbsp;</button></td>
+                    <td><button onclick="divide()">&nbsp; Divide &nbsp;</button></td>
+                </tr>
+            </table>
+        </div>
+        <p id="result"></p>
+    </body>
+</html>

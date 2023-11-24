@@ -1,0 +1,60 @@
+<!-- Programmer: Alimurung, AM 
+Date: 22 Nov 2023, 11:47 am [start]
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Guess | 3L</title>
+        <link rel="stylesheet" href="prefi_styles.css">
+        <script src="prefi_23.js"></script>
+    </head>
+    <body>
+      <!-- no. 2 - guess the random number -->
+        <div class="prompt">
+            <label for="guessn">Enter a number:</label>
+            <input 
+              id="guessn" 
+              type="text"
+              placeholder="Enter number from 1 to 10"/>
+        </div> <!--prompt end -->
+        <div class="guessBtn">
+          <button onclick="guessNum()">Try guessing!</button>
+        </div> <!--guessBtn end-->
+        <p id="result2"></p>
+        <br/> 
+        <hr/>
+
+        <!-- no. 3 - largest of the three -->
+          <p>Enter numbers: </p>
+          <br>
+        <div class="prompt2">
+          <form>
+            <label for="num-1">1st:</label>
+            <input 
+              id="num-1" 
+              type="text"
+              placeholder="Enter first number"/>
+            <br/>
+            <label for="num-2">2nd:</label>
+            <input 
+              id="num-2" 
+              type="text"
+              placeholder="Enter second number"/>
+            <br/>
+            <label for="num-3">3rd:</label>
+            <input 
+              id="num-3" 
+              type="text"
+              placeholder="Enter third number"/>
+          </form>
+        </div> <!--prompt2 end -->
+
+        <div class="findL">
+          <button onclick="largest()">Find Largest</button>
+        </div>
+        <p id="result3"></p>
+    </body>
+</html>
