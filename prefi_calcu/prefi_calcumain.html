@@ -1,0 +1,47 @@
+<!-- Programmer: Ana Alimurung 112923 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="prefi_calcustyles.css">
+        <script src="prefi_calcuscript.js"></script>
+    </head>
+
+    <body>
+       <!-- div for buttons -->
+        <div class="calcu" id="opbtn">
+            <!-- display input/selected button value -->
+             <div class="con">
+                <input type="text" class="display" id="print"/>
+                <button class="opt" id="op" onclick="eraseNum()">C</button>
+            </div> <!--end of con-->
+            
+            <div class="opt-buttons">
+                <button class="opt" id="mr" onclick="retrieveMemory();">MR</button>
+                <button class="opt" id="mc" onclick="clearMemory();">MC</button>
+                <button class="opt" id="op" onclick="setVal('*');">*</button>
+                <button class="opt" id="op" onclick="setVal('/');">/</button>
+
+                <button class="onum" id="num" onclick="setVal('7');">7</button>
+                <button class="enum" id="num" onclick="setVal('8');">8</button>
+                <button class="onum" id="num" onclick="setVal('9');">9</button>
+                <button class="opt" id="op" onclick="setVal('+');">+</button>
+
+                <button class="enum" id="num" onclick="setVal('4');">4</button>
+                <button class="onum" id="num" onclick="setVal('5');">5</button>
+                <button class="enum" id="num" onclick="setVal('6');">6</button>
+                <button class="opt" id="op" onclick="setVal('-')">-</button>
+                
+                <button class="onum" id="num" onclick="setVal('1');">1</button>
+                <button class="enum" id="num" onclick="setVal('2');">2</button>
+                <button class="onum" id="num" onclick="setVal('3');">3</button>
+                <button class="opt" id="op" onclick="print();">=</button>
+
+                <button class="number" id="num" onclick="setVal('0');">0</button>
+            </div> <!--end of opt buttons-->
+        </div><!--end of calcu-->
+    </body>
+</html>
