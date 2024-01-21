@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Ephesis&family=Josefin+Slab:wght@500&display=swap');
+/* ul{
+    align-content: center;
+} */
+
+.define{
+    font-size: medium;
+    font-family: 'Dosis', sans-serif;
+}
+
+.pg{
+    display: none;
+}
+
+.snk{
+    display: none;
+}
+
+.twst{
+    display: none;
+}
+
+.socsci{
+    display: none;
+}
+
+.primordial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed;
+    background-color: #e9ecef;
+}
+
+.primordial h1{
+    font-family: 'Ephesis', cursive;
+    text-align: center;
+}
+
+.primordial p{
+    margin-left: 25px;
+}
+
+.p1{
+    font-family: 'Josefin Slab', serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+.titan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed;
+    background-color: #e9ecef;
+}
+
+.titan h1{
+    font-family: 'Ephesis', cursive;
+    text-align: center;
+}
+
+.titan p{
+    margin-left: 25px;
+}
+
+.t1{
+    font-family: 'Josefin Slab', serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+.olympian{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 780px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed;
+    background-color: #e9ecef;
+}
+
+.olympian h1{
+    font-family: 'Ephesis', cursive;
+    text-align: center;
+}
+
+.olympian p{
+    margin-left: 25px;
+}
+
+.o1{
+    font-family: 'Josefin Slab', serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+.ggreek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed;
+    background-color: #e9ecef;
+}
+
+.ggreek h1{
+    font-family: 'Ephesis', cursive;
+    text-align: center;
+}
+
+.m1{
+    font-family: 'Josefin Slab', serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+.msg{
+    /* font-size: larger; */
+    font-family: 'Ephesis', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.msg2{
+    /* font-size: larger; */
+    font-family: 'Ephesis', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes thirteen{
+    to{
+        opacity: 0.1;
+        transform: translate3d(0, -16px, 0);
+    }
+}
+
+.thirteen{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-family: 'Josefin Slab', serif;
+}
+
+.thirteen > div{
+    width: 20px;
+    height: 20px;
+    margin: 1rem 0.2rem;
+    background: lightblue;
+    border-radius: 70%;
+    text-align: center;
+    animation: thirteen 0.6s infinite alternate;
+}
+
+/* animation prompts per letter sa akong name, since naka div man sila */
+.thirteen > div:nth-child(2){
+    animation-delay: 0.2s; /*pila ang delay seconds sa letter before appearing again*/
+}
+
+.thirteen > div:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.thirteen > div:nth-child(4){
+    animation-delay: 0.6s;
+}
+
+.thirteen > div:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+.thirteen > div:nth-child(6){
+    animation-delay: 0.10s;
+}
+.thirteen > div:nth-child(7){
+    animation-delay: 0.2s;
+}
+.thirteen > div:nth-child(8){
+    animation-delay: 0.4s;
+}

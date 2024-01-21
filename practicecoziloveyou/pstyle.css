@@ -1,0 +1,40 @@
+/* stylesheet for wellslide.html */
+body{
+    background-color: darkgoldenrod;
+}
+
+a{
+    color: darkcyan;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+section{
+    background-color: antiquewhite;
+    border: 10px solid beige;
+    height: 100vh;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+.greet{
+    border: 10px solid snow;
+    max-width: 700px;
+    width: 100%;
+    background-color: bisque;
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
