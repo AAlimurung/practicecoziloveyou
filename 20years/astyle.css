@@ -1,0 +1,472 @@
+/* menu na mo-slide ang contents when clicked  */
+.ten{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.m-toggle{
+    display: none;
+}
+
+.m-t-label{
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.stag{
+    list-style-type: none;
+    margin: 11px 0;
+    padding: 0;
+}
+
+.stag li{
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    opacity: 0;
+    transform: translateX(100%);
+    transition-property: opacity, transform;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.750, -0.015, 0.565, 1.055);
+}
+
+.m-toggle:checked ~ .stag li{
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: calc(0.055s * var(--i));
+
+}
+
+/* display label sa picture when hovered */
+.three{
+    position: relative;
+    width: 50%;
+}
+
+/* ang style sa pic */
+.pic{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.blackhover{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.three:hover .pic{
+    opacity: 0.3;
+}
+
+.three:hover .blackhover{
+    opacity: 1;
+}
+
+.text{
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* animation sa name nako, mura siyag worm WHAHAHAHHA */
+@keyframes thirteen{
+    to{
+        opacity: 0.1;
+        transform: translate3d(0, -16px, 0);
+    }
+}
+
+.thirteen{
+    display: flex;
+    justify-content: center;
+}
+
+.thirteen > div{
+    width: 14px;
+    height: 14px;
+    margin: 3rem 0.2rem;
+    background: lightblue;
+    border-radius: 50%;
+    text-align: center;
+    animation: thirteen 0.6s infinite alternate;
+}
+
+/* animation prompts per letter sa akong name, since naka div man sila */
+.thirteen > div:nth-child(2){
+    animation-delay: 0.2s; /*pila ang delay seconds sa letter before appearing again*/
+}
+
+.thirteen > div:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.thirteen > div:nth-child(4){
+    animation-delay: 0.6s;
+}
+
+.thirteen > div:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+.thirteen > div:nth-child(6){
+    animation-delay: 0.10s;
+}
+.thirteen > div:nth-child(7){
+    animation-delay: 0.2s;
+}
+.thirteen > div:nth-child(8){
+    animation-delay: 0.4s;
+}
+.thirteen > div:nth-child(9){
+    animation-delay: 0.6s;
+}
+
+/* rotate image when hovered */
+.rotate{
+    overflow: hidden;
+    margin: 8px;
+    min-width: 240px;
+    max-width: 320px;
+    width: 100%;
+}
+
+.rotate img{
+    transition: all 0.3s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.rotate:hover img{
+    transform: scale(1.3) rotate(10deg);
+}
+
+/* animation sa given lines, murag fade out-zoom in */
+.twelve{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.twelve div{
+    position: absolute;
+    border: 4px solid aqua;
+    border-radius: 50%;
+    animation: twelve 2s ease-out infinite;
+}
+
+.twelve div:nth-child(2){
+    animation-delay: -0.5s;
+}
+
+@keyframes twelve{
+    0%{
+        top: 32px;
+        left: 32px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        width: 64px;
+        height: 64px;
+        opacity: 0;
+    }
+}
+
+/* polka dot bg */
+.twoeight{
+    width: 240px;
+    height: 240px;
+    background-color: cadetblue;
+    background-image: radial-gradient(blue 10%, transparent 11%),
+        radial-gradient(lavender 10%, transparent 11%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+}
+
+/* center image */
+.twoseven{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* style given image */
+.fifteen{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+}
+
+/* gray-out when hovered */
+.hover{
+    display: inline-block;
+    position: relative;
+    color: blue;
+}
+
+.hover:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: goldenrod;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.twofour{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 100;
+    font-style: italic;
+}
+
+span{
+    padding: 0 16px;
+    transition: opacity 0.3s;
+}
+
+.twofour:hover span:not(:hover){
+    opacity: 0.5;
+}
+
+/* menu ham turn to x */
+.twotwo{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.twotwo .ham{
+    height: 5px;
+    background: cornflowerblue;
+    border-radius: 5px;
+    margin: 3px 0px;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.twotwo:hover .top{
+    transform: rotate(45deg);
+}
+
+.twotwo:hover .steak{
+    opacity: 0;
+}
+
+.twotwo:hover .bot{
+    transform: rotate(-45deg);
+}
+
+/* hide in shape then reveal when hovered */
+.twothree{
+    position: relative;
+    background: cyan;
+    width: 100px;
+    height: 80px;
+}
+
+.opappi{
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    background: darkcyan;
+    color: white;
+    padding: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.twothree:hover > .opappi,
+.twothree:focus > .opappi,
+.twothree:focus-within > .opappi{
+    visibility: visible;
+}
+
+/* center name in a box */
+.twosix{
+    border: 1px solid greenyellow;
+    height: 250px;
+    width: 250px;
+}
+
+.ctr{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.ctr > span{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 100;
+}
+
+/* animation sa name like a heartbeat, katong naa sa sud sa box */
+.fourfive{
+    margin: 24px;
+    width: 50px;
+    height: 50px;
+    background: lavender;
+    animation: fourfive 1s ease infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+}
+
+/* animation */
+@keyframes fourfive{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.5, 1.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+form {
+    border: 2px solid 
+  beige;
+    padding: 8px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  
+  form:focus-within {
+    background: 
+  cyan;
+  }
+  
+  label {
+    display: inline-block;
+    width: 72px;
+  }
+
+  /* katong input with existing placeholder */
+  input {
+    margin: 4px 12px;
+  }
+
+  .eighteen {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    background: aliceblue;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  .eighteen .prefix {
+    font-weight: 300;
+    font-size: 14px;
+    color:grey;
+  }
+  
+  .eighteen input {
+    flex-grow: 1;
+    font-size: 14px;
+    background: white;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+  }
+  
+  .eighteen:focus-within {
+    border-color: grey;
+  }
+
+  /* elements aligned in one row */
+  .seventeen::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .floated{
+    float: left;
+    padding: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+  }
+
+  /* same as seventeen, but elements changes color when selected/highlighted */
+.two{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+  ::selection {
+    background: yellow;
+    color: black;
+  }
+  
+  .two::selection {
+    background: green;
+    color: white;
+  }
+
+  /* katong naay words above sa image */
+  div {
+    position: relative;
+  }
+  
+  .txtoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+    backdrop-filter: blur(8px) brightness(80%);
+  }
+
+  /* similar as seventeen but naay space inbetween */
+  .twofive{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* circle using css */
+  .threethree{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: darkblue;
+  }
