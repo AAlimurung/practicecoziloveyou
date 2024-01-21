@@ -1,13 +1,12 @@
 /*Programmer: Ana Alimurung*/
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Julius+Sans+One&family=Neonderthaw&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Jost&family=Julius+Sans+One&family=Neonderthaw&display=swap');*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Jost', sans-serif;
 }
 
-body{
+.textile{
     background: var(--white-blu, #E8EFF4);
     /* background-image: url(); */
     background-size: cover;
@@ -27,8 +26,10 @@ header{
 
 .logo{
     cursor: pointer;
+    
 }
 
+/* nav bar main css */
 .nav-bar-main{
     background-color: transparent;
     /* position: static; */
@@ -68,7 +69,8 @@ header{
 } 
 
 .image-section-main{
-    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 90px;
 }
 
 .search-btn{
@@ -84,6 +86,49 @@ header{
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* nav bar (the rest) css */
+.nav-bar{
+    background-color: transparent;
+    /* position: static; */
+    width: 1450px;
+    height: 65.88px;  
+    justify-content: center; 
+}
+
+.nav-bar ul{
+    list-style-type: none;   
+    display: flex;
+    width: 1450px;
+    height: 70.88px; 
+}
+
+.nav-bar li{
+    justify-content: center;
+    text-align: center;
+    width: 1450px;    
+    column-gap: 10px;
+}
+
+.nav-bar ul li a{
+    width: 1150px;
+    height: 32px;
+    color: black;
+    font-family: 'Jost', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-section{
+    padding: 20px;
+    padding-bottom: 30px;
+} 
+
+.image-section{
+    padding-top: 50px;
 }
 
 /* title-block main css */
@@ -128,12 +173,45 @@ header{
     font-weight: 400;
     line-height: normal;
 }
-    
+
+/* header title block (the rest) css */
+.header-2{
+    width: 1190px;
+    height: 111px;
+    padding: 20px 0;
+    text-align: center;
+    flex-shrink: 0;
+    justify-content: center;
+} .header-2 h1:hover{
+    cursor: default;
+    color: gray;
+    transition: 0.2s ease-in;
+
+}.header-2 h3:hover{
+    cursor: default;
+    transition: 0.2s ease-in;
+}
+
+.header-2 h1{
+    width: 1450px;
+    height: 111px;
+    flex-shrink: 0;
+
+    color: black;
+    text-align: center;
+    font-family: 'Neonderthaw', cursive;
+    font-size: 81px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /* section heading main css*/
 .header-tagline{
     width: 1450px;
     height: 195px;
     flex-shrink: 0;
+    margin-top: 2%;
 }
 
 .header-tagline h1{
@@ -164,13 +242,14 @@ header{
     bottom: 0;
 }
 
+/* intro css */
 .box1{
     display: flex;
     justify-content: space-between;
     border: 1px solid rgba(77, 82, 95, 0.03);
     border-radius: 15px;
-    background-color: rgba(77, 82, 95, 0.03);
-    width: 75%;
+    background-color: #89CFF0;
+    width: 100%;
     padding: 30px;
     margin-right: auto;
     margin-left: auto;
@@ -265,7 +344,7 @@ h2{
 .box-2{
     border: 1px solid rgba(77, 82, 95, 0.03);
     border-radius: 15px;
-    background-color: rgba(77,  82, 95, 0.3);
+    background-color: #89CFF0;
     width: 78%;
     padding: 30px 30px 30px 30px;
     margin-bottom: 10px;
@@ -303,7 +382,7 @@ h2{
 .prods{
     border: 1px solid rgba(77, 82, 95, 0.03);
     border-radius: 15px;
-    background-color: rgba(77,  82, 95, 0.3);
+    background-color: #89CFF0;
     width: 78%;
     padding: 30px 30px 30px 30px;
     margin-bottom: 10px;
@@ -318,7 +397,6 @@ h2{
     margin-right: 15%;
     margin-bottom: 15px;
 }
-
 
 button{
     display: flex;
@@ -347,7 +425,7 @@ button{
 
 .underlined-button2{
     margin-left: 15px;
-    background-color: #BBC1CA;
+    background-color: #F0F8FF;
     border: 1px solid #BBC1CA;
     color: #4D525F;
     box-shadow: -2px 8px #636363;
@@ -357,12 +435,341 @@ button{
     transition: 0.2s ease-in;
 }
 
+/* services css */
+.funeral-rites{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #B4B4B4;;
+    position: relative;
+}
+
+.funeral-rites #wall{
+    background: url(<path-to-image>), lightgray -186.949px -408.354px / 143.227% 200.217% no-repeat;
+    mix-blend-mode: hard-light; 
+    width: 1510px;
+    height: 468px;
+}
+
+.funeral-rites #arrow-down-button{
+    position: absolute;
+    top: 324px;
+    left: 672px;
+    border: 2px;
+} 
+
+.funeral-rites h2{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+    color: #000;
+    font-family: Alegreya;
+    text-align: center;
+    font-size: 58px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.funeral-rites h1{
+    position: absolute;
+    top: 164px;
+    left: 549px;
+
+    color: #000;
+    text-align: center;
+    font-family: Jost;
+    font-size: 95px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 143.6%; /* 136.42px */
+    letter-spacing: 21.85px;
+}
+
+.funeral-rites h3{
+    position: absolute;
+    top: 290px;
+    left: 649px;
+
+    color: black;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+.cremation{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #C9C6C6;;
+    position: relative;
+    text-align: center;
+}
+
+.cremation #wall{
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    mix-blend-mode: overlay;
+    width: 1510px;
+    height: 463px;
+}
+
+.cremation #arrow-down-button{
+    position: absolute;
+    top: 264px;
+    left: 962px;
+    border: 2px;
+} 
+
+.cremation h1{
+    position: absolute;
+    top: 164px;
+    left: 669px;
+
+    color: #000;
+    font-family: 'Jost', sans-serif;
+    font-size: 95px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 92%;
+    letter-spacing: 21.85px;
+}
+
+.cremation h3{
+    position: absolute;
+    top: 82px;
+    left: 1008px;
+
+    color: #000;
+    font-family: 'Alegreya', serif;
+    font-size: 58px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 79px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.counseling{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #D0D0D0;
+    position: relative;
+}
+
+.counseling #wall{
+    width: 1510px;
+    height: 441px;
+    opacity: 0.75;
+    background: url(<path-to-image>), lightgray -61.432px -212.996px / 110.592% 221.78% no-repeat;
+    mix-blend-mode: hard-light;
+} 
+
+.counseling h1{
+    position: absolute;
+    top: 96px;
+    left: 544px;
+
+    font-family: Jost;
+    font-size: 95px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 95%;
+    letter-spacing: 21.85px;
+    text-align: center;
+}
+
+.counseling button{
+    position: absolute;
+    top: 299px;
+    left: 810px;
+    width: 250px;
+    height: 55px;
+
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#arrow-down-button:hover{
+    cursor: pointer;
+    filter: brightness(100%);
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+/* about us css */
+#history{
+    color: black;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 45px;
+    margin-top: 32px;
+}
+
+.aboutus-tagline{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(77, 82, 95, 0.03);
+    border-radius: 15px;
+    background-color: #72A0C1;
+    width: 55%;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.aboutus-tagline p{
+    color: black;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.staff{
+    /* display: flex; */
+    justify-content: left;
+    border: 1px solid rgba(77, 82, 95, 0.03);
+    border-radius: 15px;
+    background-color: #F0F8FF;
+    width: 55%;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.staff img{
+    width: 195px;
+    border-radius: 50%;
+    height: fit-content;
+    float: left;
+    margin: 15px 15px 0 0;
+}
+
+.staff h2{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: black;
+    text-align: left;
+}
+
+.staff p{
+    width: 680px;
+}
+
+/* partners css */
+.pair{
+    justify-content: center;
+    border: 1px solid rgba(77, 82, 95, 0.03);
+    border-radius: 15px;
+    background-color: #F0F8FF;
+    width: 45%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    /* border: 2px solid #89CFF0; */
+}
+
+.pair img{
+    width: 195px;
+    border: 2px solid #89CFF0;
+    border-radius: 50%;
+    height: fit-content;
+    margin: 15px 15px 0 0;
+    bottom: 12%;
+} .pair img:hover{
+    cursor: pointer;
+    filter: brightness(100%);
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.pair h2{
+    width: 650px;
+    height: 24px;
+    padding-left: 5px;
+
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: black;
+    text-align: center;
+} 
+
+.content-login h1{
+    padding-top: 4%;
+    padding-bottom: 2px;
+    color: black;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.log-in h2{
+    padding-top: 2px;
+    color: black;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#log-in-form{
+    justify-content: center;
+    border: 1px solid rgba(77, 82, 95, 0.03);
+    border-radius: 15px;
+    background-color: #F0F8FF;
+    width: 45%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: center;
+
+    border: 3px solid gray;
+}
+
+#log-in-form button{
+    justify-content: center;
+    width: 250px;
+    height: 55px;
+    border: 3px solid gray;
+}
+
 /* footer main css */
 .end-lines{
     padding: 15px;
-    fill: var(--somth-blue, #BED9ED);
-    width: 1440px;
-    height: 269px;
+    background-color: #72A0C1;
+    width: 1510px;
+    height: 275px;
 }
 
 .details{

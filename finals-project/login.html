@@ -4,67 +4,106 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wangsheng Funeral Parlor</title>
+        <title>Wangsheng Funeral Parlor | Log-In</title>
         <link rel="stylesheet" href="finstyles.css">
-        <script src=""></script>
     </head>
 
     <body>
         <header>
             <div class="logo">
-                <img src="" alt="logo">
+                <a href="main.html"><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\Frame 21.png" alt="logo"></a>
+            </div>
+            <div class="search-btn">
+                <img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\Layer_3.svg" alt="search_button"/>
+                <h4 id="search">Search</h4>             
             </div>
             <div class="header-1">
-                <h1 class="title-block">Wangsheng Funeral Parlor</h1>
-                <h3 class="title-tag">Funeral Parlor</h3>            
+                <h1>Wangsheng Funeral Parlor</h1>
+                <h3>Butterfly Flutters Away</h3>            
             </div>
-        </header> 
+
+            <nav class="nav-bar-main">
+                <ul class="image-section-main">
+                    <li><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\67-menu.svg" alt="Discover-logo"></li>
+                    <li><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\Vector.svg" alt="Services-logo"></li>
+                    <li><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\Layer_x0020_1.svg" alt="News-logo"></li>
+                    <li><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\Group.svg" alt="Shop-logo"></li>
+
+                </ul>
+                <ul class="menu-section-main">
+                    <li><a href="main.html">Discover</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
         
         <section class="content-login">
-            <h2>Welcome to the Parlor</h2>
-
-            <h1>LOG-IN</h1>
+            <h1>Welcome to the Parlor</h1>
             <div class="login-time">
-                <form>
-                    <label for="username">Username:</label>
-                    <input id="username" type="text" />
-                    <br/>
-                    <label for="pass">Password:</label>
-                    <input id="pass" type="text" />
-                </form>
+                <div class="log-in">
+                    <h2>LOG-IN</h2>
+                    <form id="log-in-form">
+                        <div class="input">
+                            <label for="username">Username:</label>
+                            <input id="username" type="text" name="username" required/>
+                        </div>
+                        <div class="input">
+                            <label for="pass">Password:</label>
+                            <input id="pass" type="password" name="password" required />
+                        </div>
+                        <button class="underlined-button1" type="submit">LOG-IN</button>       
+                    </form>
+                    <p id="error" class="err-msg"></p>
+                </div>
             </div>
-
             <p>
                 Need an account? Sign up for free.
             </p>
-            
+
             <footer class="end-lines">
                 <div class="details">
                     <div class="d-texts">
-                        <h2>Customer Support</h2>
+                        <h2 id="c-support">Customer Support</h2>
                         <p>Top Questions<br></p>
                         <p>Funeral Services<br></p>
-                        <p>Billings<br></p>
+                        <p><a href="billings.html">Billings</a><br></p>
                         <p>Life Plans<br></p>
                     </div>
 
                     <div class="d-texts">
-                        <h2>The Company</h2>
+                        <h2 id="coy">The Company</h2>
                         <p>Careers<br></p>
-                        <p>About Us<br></p>
+                        <p><a href="aboutus.html">About Us</a><br></p>
                         <p>Customer Reviews<br></p>
-                        <p>Partners<br></p>
+                        <p><a href="partners.html">Partners</a><br></p>
                     </div>
 
                     <div class="d-texts">
-                        <h2>Ways to Pay Respects</h2>
+                        <h2 id="wtpr">Ways to Pay Respects</h2>
                         <p>Catalog<br></p>
                         <p>Trade Program<br></p>
                         <p>Offers<br></p>
                         <p>Refer a Friend<br></p>
                     </div>
+                    <div class="excess">
+                        <ul>
+                            <li><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\instagram.svg" alt="insta-logo"></li>
+                            <li><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\youtube.svg" alt="yt-logo"></li>
+                            <li><img src="C:\Users\ana marie\Pictures\SCHOOL\meemo\facebook.svg" alt="fb-logo"></li>
+                        </ul>
+                        <p>Sign Up For Our Email List And <br>Receive 10% Off Your First Order</p>
+                        <form id="submit">
+                            <input id="username" type="text" placeholder="Your Email Address"/>
+                            <label for="username">Submit</label>
+                        </form>
+                    </div>
                 </div>
             </footer>
         </section>
+
+        <script src="script1.js"></script>
     </body>
 </html>
